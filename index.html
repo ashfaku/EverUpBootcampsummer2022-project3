@@ -8,6 +8,20 @@
 		<script></script>
 	</head>
 	<body>
-	
+		<h1 id = "title">Guess My Number</h1>
+		<div id = "header">Guess a number between 1 and 100</div> 
+		<div id = "container">
+			<div id = "scoring">
+				<div><span>score: </span><span id = "currentscore">10</span></div>
+				<div><span>High score: </span><span id = "highscore">0</span></div>
+			</div>
+			<button id = "reset">Reset</button>
+			<div id = "playArea">
+				<div id = "img" class = "center"><img src = "resources/man.png" /></div>
+				<div class = "center"><input id = "input" placeholder = "Guess any number"></input></div>
+				<div class = "center"><button id = "check" onclick = "tryNumber();">Check</button></div>
+				<div class = "center" id = "feedback">Guess a Number</div>
+			</div>
+		</div>
 	</body>
 </html>

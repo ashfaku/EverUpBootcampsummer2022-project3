@@ -4,3 +4,90 @@ body, html
 	height: 100%;
 	background-color: #FFFFBF;
 }
+#container
+{
+	width: 50%;
+	height: 80%;
+	background-color: blue;
+	position: relative;
+	left: 25%;
+	border-radius: 5%;
+}
+#title
+{
+	text-align: center;
+	font-size: 2vw;
+}
+#header
+{
+	font-size: 2vw;
+	text-align: center;
+}
+#scoring
+{
+	width: 20%;
+	height: 15%;
+	font-size: 1vw;
+	background-color: red;
+	border-radius: 10%;
+	position: relative; 
+	top: 3%;
+	left: 3%;
+}
+#scoring div
+{
+	text-align: center;
+}
+#reset
+{
+	font-size: 1vw;
+	position: absolute;
+	top: 3%;
+	right: 3%;
+	padding: 3%;
+	background-color: red;
+	border-radius: 10%;
+	width: 13%;
+}
+#playArea
+{
+	width: 80%;
+	height: 60%;
+	background-color: brown;
+	position: relative; 
+	top: 5%;
+	left: 10%;
+	border-radius: 10%;
+}
+.center
+{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3%;
+
+}
+#img
+{
+	height: 33%;
+}
+#img img
+{
+	height: 100%;
+	width: auto;
+}
+#playArea
+{
+	font-size: 1.5vw;
+}
+#input
+{
+	border-radius: 20%;
+	width: 50%;
+	text-align: center;
+	padding: 2%;
+}
+#check
+{
+	padding: 3%;
+	background-color: blue;
+}
