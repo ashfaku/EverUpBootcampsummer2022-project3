@@ -36,6 +36,8 @@ function win()
 	document.getElementById("winscore").innerHTML = currentscore;
 	if (currentscore > highscore)
 		highscore = currentscore;
+	document.getElementById("winArea").style.pointerEvents = "auto";
+	document.getElementById("playArea").style.pointerEvents = "none";
 	document.getElementById("winhigh").innerHTML = highscore;
 	document.getElementById("scoring").style.opacity = 0;
 	document.getElementById("reset").style.opacity = 0;
@@ -44,6 +46,8 @@ function win()
 function lose()
 {
 	document.getElementById("check").disabled = true;
+	document.getElementById("scoring").style.opacity = 0;
+	document.getElementById("reset").style.opacity = 0;
 	document.getElementById("feedback").innerHTML = "You've run out of guesses. Please click the reset button to try again, with a new number.";
 	document.getElementById("image").src = "resources/lose.png";
 	document.getElementById("feedback").style.fontSize = "1vw";
@@ -76,16 +80,14 @@ function tryNumber()
 			{
 				guesses.push(number);
 				currentscore--;	
-				if (currentscore == 0)
-				{
-					lose();
-					return;
-				}
 				var li = document.createElement("li");
 				li.innerHTML = `Guess #${guesses.length} > ${number}`;
+				document.getElementById("g").appendChild(li);
+		
 				if (number == randomNum)
 				{
 					win();
+					return;
 				}
 				else if (number > randomNum)
 				{
@@ -97,7 +99,11 @@ function tryNumber()
 					document.getElementById("feedback").innerHTML = "This was below the random number";
 					li.innerHTML += ", Too Low";
 				}
-				document.getElementById("g").appendChild(li);
+				if (currentscore == 0)
+				{
+					lose();
+					return;
+				}
 			}
 			display();
 		}		

@@ -15,7 +15,7 @@
 				<div><span>score: </span><span id = "currentscore">10</span></div>
 				<div><span>High score: </span><span id = "highscore">0</span></div>
 			</div>
-			<button id = "reset">Reset</button>
+			<button id = "reset" onclick = "reset();">Reset</button>
 			<div id = "playArea">
 				<div id = "img" class = "center"><img id = "image" src = "resources/man.png" /></div>
 				<div class = "center"><input id = "input" placeholder = "Guess any number"></input></div>
@@ -29,7 +29,7 @@
 				<div class = "winCenter">Your guess was correct. <span id = "randomNum">15 </span> was the random number.</div>
 				<div class = "winCenter">Your score: <span id = "winscore"></span></div>
 				<div class = "winCenter">Your high score: <span id = "winhigh"></span></div>
-			
+				<div class = "winCenter"><button onclick = "reset();">Play again</button></div>
 			</div>
 		</div>
 	</body>
