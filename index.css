@@ -2,41 +2,65 @@ body, html
 {
 	width: 100%;
 	height: 100%;
-	background-color: #FFFFBF;
+	background-color: #A5E3E0 ;
+    font-family: 'Quicksand', sans-serif;
+}
+#winArea
+{
+	position: absolute;
+	opacity: 0;
+	top: -65% !important;
+	pointer-events: none;
 }
 #container
 {
 	width: 50%;
 	height: 80%;
-	background-color: blue;
+	background-color: #f5f2de;
 	position: relative;
 	left: 25%;
 	border-radius: 5%;
 }
+.h1 {
+    text-shadow: 1vw 2vw 2vw pink;
+  }
 #title
 {
 	text-align: center;
 	font-size: 2vw;
+    text-shadow: -10px 10px 0px #ffd0cf;
+    font-family: 'Quicksand', sans-serif;
+                 
 }
 #header
 {
 	font-size: 2vw;
 	text-align: center;
+    text-shadow: 1vw 1vw 2vw pink;
 }
 #scoring
 {
 	width: 20%;
 	height: 15%;
 	font-size: 1vw;
-	background-color: red;
+	background-color: #ffd0cf;
 	border-radius: 10%;
 	position: relative; 
 	top: 3%;
 	left: 3%;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
+
 #scoring div
 {
 	text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    line-height: 30px;
 }
 #reset
 {
@@ -45,26 +69,41 @@ body, html
 	top: 3%;
 	right: 3%;
 	padding: 3%;
-	background-color: red;
+	background-color: #ffd0cf;
 	border-radius: 10%;
 	width: 13%;
+    font-family: 'Quicksand', sans-serif;
 }
-#playArea
+#playArea, #winArea
 {
 	width: 80%;
 	height: 60%;
-	background-color: brown;
+	background-color: #baa993;
 	position: relative; 
 	top: 5%;
 	left: 10%;
 	border-radius: 10%;
 }
-.center
+.center, .winCenter
 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	font-size: 1vw;
+}
+.center
+{
 	margin-bottom: 3%;
-
+}
+.winCenter
+{
+	margin-bottom: 0%;
+}
+#randomNum
+{
+	font-weight: bold;
+	font-size: 3vw;
+	padding-right: .5vw;
 }
 #img
 {
@@ -89,5 +128,47 @@ body, html
 #check
 {
 	padding: 3%;
-	background-color: blue;
+	background-color: #C8E1CC;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+	font-size: .9vw;
+	width: 30%;
+}
+
+#feedback
+{
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vw;
+}
+#input
+{
+	background-color: #f5f2de;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vw;
+}
+
+ul 
+{
+	margin: auto;
+	padding:5px;
+	background-color: green;
+	width: 60%;
+	height: 10%;
+	overflow: auto;
+	text-align:justify;
+	border-radius: 10%;
+	background-color: #A5E3E0 ;
+	font-family: 'Quicksand', sans-serif;
+	position: relative; 
+	bottom: -7vh;     
+	font-size: 2vw;
+}
+ul 
+{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
 }
