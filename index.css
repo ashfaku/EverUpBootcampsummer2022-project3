@@ -117,7 +117,9 @@ body, html
 #playArea
 {
 	font-size: 1.5vw;
+	opacity: 0;
 }
+
 #input
 {
 	border-radius: 20%;
@@ -171,4 +173,47 @@ ul
     margin: auto;
     padding: 0;
     text-align: center;
+}
+
+#loseArea{
+	text-align: center;
+	margin-bottom: 0%;
+	width: 80%;
+	height: 80%;
+	background-color: #C8E1CC;
+	position: absolute; 
+	top: 5%;
+	left: 10%;
+	border-radius: 10%;
+}
+
+.loseCenter {
+	font-size: 1.5vh;
+}
+
+span.randomNum{
+	font-weight: normal;
+}
+
+h2{
+	font-weight:normal;
+}
+
+h3{
+	font-weight:bold;	
+	font-size:20px;
+}
+
+.button1{
+	background-color: #4CAF50; 
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	margin: 2px 1px;
+	cursor: pointer;
+	border-radius: 8px;
 }
