@@ -8,6 +8,10 @@
 		<script></script>
 	</head>
 	<body onload = "init();">
+		<div id = "right">
+			<h1 id = "h">List of scores</h1>
+			<ul id = "scoreList"></ul>
+		</div>
 		<h1 id = "title">Guess My Number</h1>
 		<div id = "header">Guess a number between 1 and 100</div> 
 		<div id = "container">
@@ -26,7 +30,7 @@
 			<div id = "winArea">
 				<div id = "img" class = "winCenter"><img id = "win" src = "resources/win.PNG" /></div>
 				<div class = "winCenter"><h1>Congratulations!</h1></div>
-				<div class = "winCenter">Your guess was correct. <span id = "randomNum">15 </span> was the random number.</div>
+				<div class = "winCenter">Your guess was correct. <span id = "randomNum"></span> was the random number.</div>
 				<div class = "winCenter">Your score: <span id = "winscore"></span></div>
 				<div class = "winCenter">Your high score: <span id = "winhigh"></span></div>
 				<div class = "winCenter"><button class = "button1" onclick = "reset();">Play again</button></div>
@@ -35,9 +39,7 @@
 				<div id = "img" class = "loseCenter"><img id = "lose" src = "resources/lose.PNG" /></div>
 				<div class = "loseCenter"><h1>Unfortunately You Lost the Game. </h1></div>
 				<div class = "loseCenter"><h2>Don't give up and Try Again. You can win the next time</h2></div>
-				<div class = "loseCenter">Your guess was incorrect. <span id = "randomNum">15 </span> </div>
-				<div class = "loseCenter"> <h3>My number: <span id = "winscore"></span> </h3> </div>
-				<div class = "loseCenter"> <h3>Your high score: <span id = "winhigh"></span> </h3> </div>
+				<div class = "loseCenter"> <h3>My number: <span id = "random"></span> </h3> </div>
 				<div class = "loseCenter"><button class = "button1" onclick = "reset();">Play again</button></div>
 			</div>
 		</div>
